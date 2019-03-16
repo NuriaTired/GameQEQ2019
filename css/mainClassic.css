@@ -1,0 +1,496 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Helvetica, Arial;
+  margin: 0; /*Para resetear al empezar */
+  padding: 0; /*Para resetear al empezar */
+  /* font: size 100%; */
+  font-size: 16px; /* CONSULTAR */
+  box-sizing: border-box; /*Para que no crezcan las cajas, a pesar de los bordes */
+}
+
+h1,
+body,
+html,
+main {
+  margin: 0;
+}
+
+/* Fondo Interrogantes */
+.main-screen {
+  background: url("../images/Otros/FondoYellow.jpg");
+  background-size: 30%;
+  background-repeat: repeat;
+}
+
+/*----------------- MENU SUPERIOR BARRA NAV -------------------------*/
+.top-superior {
+  /* border:2px solid rgba(81, 90, 202, 0.836); */
+  background: url("../images/Otros/FondoYellowOpac.jpg");
+  height: 15vh;
+  background-size: 30%;
+  background-repeat: repeat;
+}
+
+ul {
+  /* border:2px solid rgba(81, 90, 202, 0.836); */
+  display: flex;
+  /* flex-direction: row; */
+  font-size: 22px;
+}
+
+li {
+  /* border: 1px solid rgba(47, 48, 43, 0.836); */
+  position: relative;
+  list-style-type: none;
+  margin-right: 50px;
+  cursor: pointer;
+  color: black;
+}
+
+.nav ul ul {
+  /* border: 1px solid rgba(202, 62, 62, 0.836); */
+  display: none; /*Con este Display lo escondemos */
+}
+
+.nav ul li:hover > ul {
+  display: flex; /*Con este Display lo mostramos cuando estamos encima */
+}
+
+.nav ul li > ul {
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+/* ----------------- */
+.box {
+  opacity: 0.8; /* opacidad */
+}
+
+.top-box {
+  /* border:2px solid rgb(159, 204, 206); */
+  width: 90vw;
+  height: 15vh;
+  padding-top: 1.5vh;
+  margin: auto;
+}
+
+/* -------------BOTONES--------- */
+/* HAIR ------------------------*/
+
+.button-Hair-Length {
+  border-radius: 7px;
+  border: 1px solid rgba(27, 27, 27, 0.514);
+  width: 6vw;
+  height: 8vh;
+  text-align: center;
+  background-color: rgba(238, 229, 209, 0.514);
+  margin-top:10px;
+}
+
+.svgCentrado {
+  margin: 5px auto;
+  display: block;
+}
+
+
+.button-Hair-Beard {
+  border-radius: 7px;
+  border: 1px solid rgba(27, 27, 27, 0.514);
+  width: 5vw;
+  height: 8vh;
+  text-align: center;
+  margin-top:10px;
+  background-color: rgba(238, 229, 209, 0.514);
+}
+
+.button-Hair-Moustache {
+  border-radius: 7px;
+  border: 1px solid rgba(27, 27, 27, 0.514);
+  width: 6.5vw;
+  height: 8vh;
+  text-align: center;
+  margin-top:10px;
+  background-color: rgba(238, 229, 209, 0.514);
+}
+
+
+
+
+
+/* COLOR HAIR ------------------------*/
+.button-Hair-Black {
+  border-radius: 7px;
+  background-color: rgb(31, 30, 29);
+  border: 1px solid rgba(27, 27, 27, 0.514);
+  width: 8vw;
+  height: 2.5vh;
+  text-align: center;
+  color: white;
+}
+
+.button-Hair-Blonde {
+  border-radius: 7px;
+  background-color: rgba(192, 158, 47, 0.61);
+  border: 1px solid rgb(27, 27, 27);
+  width: 8vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+.button-Hair-Fire {
+  border-radius: 7px;
+  background-color: rgba(247, 76, 9, 0.822);
+  border: 1px solid rgb(27, 27, 27);
+  width: 8vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+.button-Hair-White {
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.822);
+  border: 1px solid rgb(27, 27, 27);
+  width: 8vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+/* EYES ------------------------------------*/
+.button-Eyes-Brown {
+  border-radius: 7px;
+  background-color: rgb(136, 97, 72);
+  border: 1px solid rgb(27, 27, 27);
+  width: 6vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+.button-Eyes-Green {
+  border-radius: 7px;
+  background-color: rgb(116, 160, 134);
+  border: 1px solid rgb(27, 27, 27);
+  width: 6vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+.button-Eyes-Blue {
+  border-radius: 7px;
+  background-color: rgb(139, 191, 226);
+  border: 1px solid rgb(27, 27, 27);
+  width: 6vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+/* ACCESORIES -------------------------------------- */
+
+.button-Acc-eyesglasses {
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 7px;
+  width: 8vw;
+  height: 7vh;
+  text-align: center;
+  background-color: rgb(200, 229, 230);
+}
+
+.button-Acc-earrings {
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 7px;
+  width: 7vw;
+  height: 7vh;
+  text-align: center;
+  background-color: rgb(234, 236, 217);
+}
+
+.button-Acc-Hat {
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 7px;
+  width: 6vw;
+  height: 7vh;
+  text-align: center;
+  background-color: rgb(193, 194, 189);
+}
+
+/* OTHERS --------------------- */
+.button-Skin-Meat {
+  border-radius: 7px;
+  background-color: rgb(245, 214, 215);
+  border: 1px solid rgb(27, 27, 27);
+  width: 7vw;
+  height: 7vh;
+  text-align: center;
+}
+
+.button-Skin-Darker {
+  border-radius: 7px;
+  background-color: rgb(182, 163, 141);
+  border: 1px solid rgb(27, 27, 27);
+  width: 7vw;
+  height: 7vh;
+  text-align: center;
+}
+
+.button-IronPros {
+  border-radius: 7px;
+  background-color: rgba(77, 151, 77, 0.418);
+  border: 1px solid rgb(27, 27, 27);
+  width: 7vw;
+  height: 7vh;
+  text-align: center;
+}
+
+/*----------------- IRON-PEOPLE -------------------------*/
+.center-box {
+  /* border: 2px solid rgb(164, 170, 199);  */
+  width: 100vw;
+  height: 70vh;
+  pointer-events: none;
+}
+
+.center-box-center {
+  /* border: 3px solid rgb(149, 199, 145); */
+  margin: auto;
+  width: 91vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.iron {
+  /* border:1px solid rgb(226, 108, 39); */
+  width: 7vw;
+  height: 20vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2.3vw;
+  margin-right: 2vw;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* centras imagen */
+  cursor: -webkit-grab;
+  cursor: grab;
+  background-size: 12vh;
+}
+
+.iron1 {
+  background-image: url("../images/Classic/1.jpg");
+}
+
+.iron2 {
+  background-image: url("../images/Classic/2.jpg");
+}
+
+.iron3 {
+  background-image: url("../images/Classic/3.jpg");
+}
+
+.iron4 {
+  background-image: url("../images/Classic/4.jpg");
+}
+.iron5 {
+  background-image: url("../images/Classic/5.jpg");
+}
+.iron6 {
+  background-image: url("../images/Classic/6.jpg");
+}
+.iron7 {
+  background-image: url("../images/Classic/7.jpg");
+}
+.iron8 {
+  background-image: url("../images/Classic/8.jpg");
+}
+.iron9 {
+  background-image: url("../images/Classic/9.jpg");
+}
+.iron10 {
+  background-image: url("../images/Classic/10.jpg");
+}
+
+.iron11 {
+  background-image: url("../images/Classic/11.jpg");
+}
+
+.iron12 {
+  background-image: url("../images/Classic/12.jpg");
+}
+
+.iron13 {
+  background-image: url("../images/Classic/13.jpg");
+}
+
+.iron14 {
+  background-image: url("../images/Classic/14.jpg");
+}
+.iron15 {
+  background-image: url("../images/Classic/15.jpg");
+}
+.iron16 {
+  background-image: url("../images/Classic/16.jpg");
+}
+.iron17 {
+  background-image: url("../images/Classic/17.jpg");
+}
+.iron18 {
+  background-image: url("../images/Classic/18.jpg");
+}
+.iron19 {
+  background-image: url("../images/Classic/19.jpg");
+}
+.iron20 {
+  background-image: url("../images/Classic/20.jpg");
+}
+
+.iron21 {
+  background-image: url("../images/Classic/21.jpg");
+}
+
+.iron22 {
+  background-image: url("../images/Classic/22.jpg");
+}
+
+.iron23 {
+  background-image: url("../images/Classic/23.jpg");
+}
+
+.iron24 {
+  background-image: url("../images/Classic/24.jpg");
+}
+
+/* DAR VUELTA A LA CARTA ---------- */
+.cardBack {
+  background-image: url("../images/Classic/Back.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* centras imagen */
+}
+
+/* --------GANAR ------------------- */
+.y {
+  background-image: url("../images/Classic/BackY.jpg");
+}
+
+.o {
+  background-image: url("../images/Classic/BackO.jpg");
+}
+
+.u {
+  background-image: url("../images/Classic/BackU.jpg");
+}
+
+.w {
+  background-image: url("../images/Classic/BackW.jpg");
+}
+
+.i {
+  background-image: url("../images/Classic/BackI.jpg");
+}
+
+.n {
+  background-image: url("../images/Classic/BackN.jpg");
+}
+.adm {
+  background-image: url("../images/Classic/Back!.jpg");
+}
+
+.l {
+  background-image: url("../images/Classic/BackL.jpg");
+}
+
+.s {
+  background-image: url("../images/Classic/BackS.jpg");
+}
+
+.t {
+  background-image: url("../images/Classic/BackT.jpg");
+}
+
+/* CAJA INFERIOR */
+
+.lower-box {
+  /* border: 2px solid rgb(224, 206, 124); */
+  width: 100vw;
+  height: 15vh;
+}
+
+.lower-center {
+  /* border: 3px solid rgb(51, 45, 124); */
+  margin: auto;
+  width: 91vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.yes {
+  border-radius: 7px;
+  border: 2px solid rgb(131, 123, 119);
+  background-color: rgb(139, 192, 69);
+  margin: auto;
+  bottom: 2vh;
+  width: 15vh;
+  height: 8vh;
+  color: rgb(87, 88, 87);
+  cursor: none;
+}
+
+.no {
+  border-radius: 7px;
+  border: 2px solid rgb(105, 93, 86);
+  background-color: rgb(235, 86, 60);
+  margin: auto;
+  bottom: 2vh;
+  width: 15vh;
+  height: 8vh;
+  color: rgb(75, 70, 69);
+  cursor: none;
+}
+
+.normalbutton {
+  border-radius: 7px;
+  border: 2px solid rgb(105, 93, 86);
+  margin: auto;
+  bottom: 2vh;
+  width: 15vh;
+  height: 8vh;
+  color: rgb(75, 70, 69);
+  cursor: none;
+}
+
+.rondas{
+  border: 1px solid rgb(105, 93, 86);
+  border-radius: 7px;
+  width: 7vh;
+  height: 4vh;
+  text-align:center;
+  margin: auto;
+  bottom: 2vh;
+  font-size: 18px;
+  padding-top:0.5vh;
+  background-color:  rgb(233, 232, 167);
+
+}
+
+
+.lower-box {
+  /* border: 2px solid rgb(224, 206, 124); */
+  width: 100vw;
+  height: 15vh;
+}
+
+.button-guess {
+  width: 10vw;
+  height: 4vh;
+  margin: auto;
+  background-color: rgb(231, 230, 164);
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  text-align: center;
+  padding-top:0.5vh;
+  cursor: pointer;
+}
+
+
